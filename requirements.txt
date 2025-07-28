@@ -1,0 +1,48 @@
+# Jupyter & core packages
+ipykernel
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+
+# Scientific computing
+scipy
+
+# Machine Learning
+scikit-learn
+imblearn
+xgboost
+catboost
+
+# MongoDB connectivity
+pymongo
+
+# File system navigation
+from_root
+
+# ML Monitoring
+evidently==0.2.8
+
+# Serialization
+dill
+
+# Configuration
+PyYAML
+
+# Model Factory (custom package or logic?)
+neuro_mf
+
+# AWS SDK
+boto3
+mypy-boto3-s3
+botocore
+
+# API serving
+fastapi
+uvicorn
+jinja2
+python-multipart
+
+# Local development install
+-e .
