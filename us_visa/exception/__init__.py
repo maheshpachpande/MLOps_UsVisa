@@ -2,7 +2,7 @@ import os
 import sys
 import traceback
 
-def error_message_detail(error: Exception, error_detail: sys) -> str:
+def error_message_detail(error: Exception, error_detail) -> str:
     """
     Extracts detailed error message including script name and line number.
 
@@ -24,7 +24,7 @@ class USvisaException(Exception):
     Custom exception class for the US Visa Classifier project.
     Enhances standard exceptions with traceback details.
     """
-    def __init__(self, error_message: Exception, error_detail: sys):
+    def __init__(self, error_message: Exception, error_detail):
         super().__init__(str(error_message))
         self.error_message = error_message_detail(error_message, error_detail)
 
