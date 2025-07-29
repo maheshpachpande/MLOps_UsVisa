@@ -18,3 +18,21 @@
 - The -r flag is required to indicate you want pip to install from a requirements file, not a single package by that name. It helps automate dependency management and maintain consistency across environments.
 - What Does -e . Mean? -- e stands for editable. -- . refers to the current directory (where setup.py is located).
 
+### Workflow:
+- Data Ingestion
+- Data Validation
+- Data Transformation
+- Model Trainer
+- Model Evaluation
+- Model Pusher
+
+### Steps to updation:
+(constants ---> entity ---> components ---> pipeline ---> main.py)
+
+### Data Ingestion
+- Update Configuration Entity: The configuration module is well-structured, leveraging @dataclass to manage settings for each pipeline component, which is an excellent pattern for clean, type-safe, and extensible configuration management.
+- Update artifact entity: The DataIngestionArtifact class holds paths to files generated during data ingestion.
+
+    - Fields:
+    - trained_file_path: Path to the training data file.
+    - test_file_path: Path to the testing data file.
